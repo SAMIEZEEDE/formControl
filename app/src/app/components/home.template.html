@@ -1,0 +1,24 @@
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" fxFill>
+  <div fxLayout="row wrap" class="width100" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="column wrap" class="bgPurple height100" fxFlex="5" fxLayoutAlign="start stretch" [fxShow]="true"></div>
+    <div fxLayout="column wrap" class="height100" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true"></div>
+    <div fxLayout="column wrap" class="mainContentwidth bg padddingLeft" fxFlex="75" fxLayoutGap="2.5em" fxLayoutAlign="start stretch" [fxShow]="true">
+      <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+        <h2 class="hearding">
+          Controls and Validations</h2>
+      </div>
+      <form>
+        <div fxLayout="row wrap" fxLayoutGap="4em" fxLayoutAlign="start center" [fxShow]="true">
+          <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true">
+            <div>
+              Required text</div>
+          </div>
+          <mat-form-field class="inputbg" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+            <input matInput [required]="false">
+
+          </mat-form-field>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

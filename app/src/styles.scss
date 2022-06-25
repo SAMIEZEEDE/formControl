@@ -1,0 +1,78 @@
+/*Importing default angular material css theme. */
+
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "nDefaults.scss";
+.bg{
+   background-color:  #faf9fa;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.paddingMargin0{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.inputbg{
+    background-color:  #ffffff;
+    width: 60%;
+}
+.inputWidth25{
+    width: 25%;
+}
+.inputbgWhite{
+    background-color:  #ffffff;
+    
+}
+
+.mat-form-field-appearance-outline .mat-form-field-wrapper {
+     padding: 0 !important;
+    margin: 0 !important;
+}
+.mat-form-field-appearance-outline .mat-form-field-infix {
+    padding: 0.2em 0 0.2em 0 !important;
+    margin: 0 !important;
+}
+.margBottom2em{
+
+    margin-bottom: 2em !important;
+}
+.mainContentwidth{
+    width: calc(100vw - (20% + 60px));
+}
+
+.width90{
+    width: 90%;
+}
+.width100{
+    width: 100%;
+}
+.width49{
+    width: 49%;
+}
+.height100{
+ height: 100vh;
+}
+.padddingLeft{
+padding-left: 60px;
+padding-top: 10px;
+}
+label{
+    color: #bdb3c3;
+}
+.hearding{
+    color: #9e34df;
+    font-weight: 400;
+}
+.fontWeight400{
+    font-weight: 400;
+}
+.bgPurple{
+    background-color:  #9e34df;
+    
+}
+.bgGrey{
+    background-color:  grey;
+    
+}

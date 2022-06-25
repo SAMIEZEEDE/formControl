@@ -1,0 +1,23 @@
+{
+    "classes": [
+        "bg",
+        "paddingMargin0",
+        "inputbg",
+        "inputWidth25",
+        "inputbgWhite",
+        "mat-form-field-appearance-outline",
+        "mat-form-field-wrapper",
+        "mat-form-field-infix",
+        "margBottom2em",
+        "mainContentwidth",
+        "width90",
+        "width100",
+        "width49",
+        "height100",
+        "padddingLeft",
+        "hearding",
+        "fontWeight400",
+        "bgPurple",
+        "bgGrey"
+    ]
+}
