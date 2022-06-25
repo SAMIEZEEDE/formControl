@@ -1,107 +1,134 @@
 <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" fxFill>
   <div fxLayout="row wrap" class="width100" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true">
-    <div fxLayout="column wrap" class="bgPurple height100" fxFlex="5" fxLayoutAlign="start stretch" [fxShow]="true"></div>
-    <div fxLayout="column wrap" class="height100" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true"></div>
+    <div fxLayout="column wrap" class="bgPurple height100" fxFlex="5" fxLayoutAlign="start stretch" [fxShow]="true">
+      <div fxLayout="row wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true"></div>
+      <div fxLayout="row wrap" fxFlex="60" fxLayoutAlign="center center" [fxShow]="true">
+        <div fxLayout="column wrap" fxLayoutGap="2em" fxLayoutAlign="center center" [fxShow]="true">
+          <mat-icon>tune</mat-icon>
+          <mat-icon>notifications</mat-icon>
+          <mat-icon>search</mat-icon>
+        </div>
+      </div>
+      <div fxLayout="row wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true"></div>
+    </div>
+    <div fxLayout="column wrap" class="height100" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true">
+      <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;">
+        <mat-select placeholder="Forms" [required]="false">
+          <mat-option [value]="&apos;1&apos;" disabled="false">Control &amp; Validations</mat-option>
+          <mat-option [value]="&apos;2&apos;" disabled="false">Extended Control</mat-option>
+          <mat-option [value]="&apos;3&apos;" disabled="false">Sample Layout</mat-option>
+          <mat-option [value]="&apos;4&apos;" disabled="false">Material Forms</mat-option>
+          <mat-option [value]="&apos;5&apos;" disabled="false">Stepper/Wizard</mat-option>
+        </mat-select>
+
+      </mat-form-field>
+    </div>
     <div fxLayout="column wrap" class="mainContentwidth bg padddingLeft" fxFlex="75" fxLayoutGap="2.5em" fxLayoutAlign="start stretch" [fxShow]="true">
       <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
         <h2 class="hearding">
           Controls and Validations</h2>
       </div>
       <form>
-        <div fxLayout="row wrap" fxLayoutGap="4em" fxLayoutAlign="start center" [fxShow]="true">
-          <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true"><label>
-              Required text</label></div>
-          <mat-form-field class="inputbg" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
-            <input matInput [required]="false">
+        <div fxLayout="column wrap" fxLayoutGap="1em" fxLayoutAlign="start stretch" [fxShow]="true">
+          <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+            <h3>
+              Simple validations</h3>
+          </div>
+          <div fxLayout="row wrap" fxLayoutGap="4em" fxLayoutAlign="start center" [fxShow]="true">
+            <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true"><label>
+                Required text</label></div>
+            <mat-form-field class="inputbg" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+              <input matInput [required]="false">
 
-          </mat-form-field>
-        </div>
-        <div fxLayout="row wrap" fxLayoutGap="4em" fxLayoutAlign="start center" [fxShow]="true">
-          <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true"><label>
-              Optional text</label></div>
-          <mat-form-field class="inputbg" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
-            <input matInput [required]="false">
+            </mat-form-field>
+          </div>
+          <div fxLayout="row wrap" fxLayoutGap="4em" fxLayoutAlign="start center" [fxShow]="true">
+            <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true"><label>
+                Optional text</label></div>
+            <mat-form-field class="inputbg" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+              <input matInput [required]="false">
 
-          </mat-form-field>
-        </div>
-        <div fxLayout="row wrap" fxLayoutGap="4em" fxLayoutAlign="start center" [fxShow]="true">
-          <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true"><label>
-              Email</label></div>
-          <mat-form-field class="inputbg" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
-            <input matInput [required]="false">
+            </mat-form-field>
+          </div>
+          <div fxLayout="row wrap" fxLayoutGap="4em" fxLayoutAlign="start center" [fxShow]="true">
+            <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true"><label>
+                Email</label></div>
+            <mat-form-field class="inputbg" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+              <input matInput [required]="false">
 
-          </mat-form-field>
-        </div>
-        <div fxLayout="row wrap" fxLayoutGap="4em" fxLayoutAlign="start center" [fxShow]="true">
-          <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true"><label>
-              Equal</label></div>
-          <div fxLayout="column wrap" fxFlex="60" fxLayoutAlign="start stretch" [fxShow]="true">
-            <div fxLayout="row wrap" class="width100" fxLayoutAlign="space-between stretch" [fxShow]="true">
-              <mat-form-field class="width49 inputbg" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
-                <input matInput [required]="false">
+            </mat-form-field>
+          </div>
+          <div fxLayout="row wrap" fxLayoutGap="4em" fxLayoutAlign="start center" [fxShow]="true">
+            <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true"><label>
+                Equal</label></div>
+            <div fxLayout="column wrap" fxFlex="60" fxLayoutAlign="start stretch" [fxShow]="true">
+              <div fxLayout="row wrap" class="width100" fxLayoutAlign="space-between stretch" [fxShow]="true">
+                <mat-form-field class="width49 inputbg" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                  <input matInput [required]="false">
 
-              </mat-form-field>
-              <mat-form-field class="inputbgWhite width49" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
-                <input matInput [required]="false">
+                </mat-form-field>
+                <mat-form-field class="inputbgWhite width49" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                  <input matInput [required]="false">
 
-              </mat-form-field>
+                </mat-form-field>
+              </div>
             </div>
           </div>
-        </div>
-        <div fxLayout="row wrap" fxLayoutGap="4em" fxLayoutAlign="start center" [fxShow]="true">
-          <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true"><label>
-              Max length</label></div>
-          <mat-form-field class="inputbg" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
-            <input matInput [required]="false">
+          <div fxLayout="row wrap" fxLayoutGap="4em" fxLayoutAlign="start center" [fxShow]="true">
+            <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true"><label>
+                Max length</label></div>
+            <mat-form-field class="inputbg" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+              <input matInput [required]="false">
 
-          </mat-form-field>
-        </div>
-        <div fxLayout="row wrap" fxLayoutGap="4em" fxLayoutAlign="start center" [fxShow]="true">
-          <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true"><label>
-              Min length</label></div>
-          <mat-form-field class="inputbg" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
-            <input matInput [required]="false">
+            </mat-form-field>
+          </div>
+          <div fxLayout="row wrap" fxLayoutGap="4em" fxLayoutAlign="start center" [fxShow]="true">
+            <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true"><label>
+                Min length</label></div>
+            <mat-form-field class="inputbg" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+              <input matInput [required]="false">
 
-          </mat-form-field>
-        </div>
-        <div fxLayout="row wrap" fxLayoutGap="4em" fxLayoutAlign="start center" [fxShow]="true">
-          <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true"><label>
-              Number</label></div>
-          <mat-form-field class="inputbgWhite" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
-            <input matInput [required]="false">
+            </mat-form-field>
+          </div>
+          <div fxLayout="row wrap" fxLayoutGap="4em" fxLayoutAlign="start center" [fxShow]="true">
+            <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true"><label>
+                Number</label></div>
+            <mat-form-field class="inputbgWhite" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+              <input matInput [required]="false">
 
-          </mat-form-field>
-        </div>
-        <div fxLayout="row wrap" fxLayoutGap="4em" fxLayoutAlign="start center" [fxShow]="true">
-          <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true"><label>
-              Min value</label></div>
-          <mat-form-field class="inputbgWhite" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
-            <input matInput [required]="false">
+            </mat-form-field>
+          </div>
+          <div fxLayout="row wrap" fxLayoutGap="4em" fxLayoutAlign="start center" [fxShow]="true">
+            <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true"><label>
+                Min value</label></div>
+            <mat-form-field class="inputbgWhite" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+              <input matInput [required]="false">
 
-          </mat-form-field>
-        </div>
-        <div fxLayout="row wrap" fxLayoutGap="4em" fxLayoutAlign="start center" [fxShow]="true">
-          <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true"><label>
-              Max value</label></div>
-          <mat-form-field class="inputbgWhite" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
-            <input matInput [required]="false">
+            </mat-form-field>
+          </div>
+          <div fxLayout="row wrap" fxLayoutGap="4em" fxLayoutAlign="start center" [fxShow]="true">
+            <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true"><label>
+                Max value</label></div>
+            <mat-form-field class="inputbgWhite" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+              <input matInput [required]="false">
 
-          </mat-form-field>
-        </div>
-        <div fxLayout="row wrap" fxLayoutGap="4em" fxLayoutAlign="start center" [fxShow]="true">
-          <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true"><label>
-              Date</label></div>
-          <mat-form-field class="inputbgWhite" [appearance]="&apos;legacy&apos;">
-            <input matInput placeholder="YYYY-MM-DD" [matDatepicker]="picker" [required]="false" [disabled]="false">
-            <mat-datepicker-toggle matSuffix [for]="picker" disabled="false"></mat-datepicker-toggle>
-            <mat-datepicker #picker [disabled]="false"></mat-datepicker>
+            </mat-form-field>
+          </div>
+          <div fxLayout="row wrap" fxLayoutGap="4em" fxLayoutAlign="start center" [fxShow]="true">
+            <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true"><label>
+                Date</label></div>
+            <mat-form-field class="inputbgWhite" [appearance]="&apos;outline&apos;">
+              <input matInput placeholder="YYYY-MM-DD" [matDatepicker]="picker" [required]="false" [disabled]="false">
+              <mat-datepicker-toggle matSuffix [for]="picker" disabled="false"></mat-datepicker-toggle>
+              <mat-datepicker #picker [disabled]="false"></mat-datepicker>
 
-          </mat-form-field>
-        </div>
-        <div fxLayout="row wrap" fxLayoutGap="4em" fxLayoutAlign="start center" [fxShow]="true">
-          <mat-checkbox class="inputbgWhite" [required]="false"></mat-checkbox>
-          <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true"><label>
-              Accept terms and conditions</label></div>
+            </mat-form-field>
+          </div>
+          <div fxLayout="row wrap" fxLayoutGap="4em" fxLayoutAlign="start center" [fxShow]="true">
+            <mat-checkbox class="inputbgWhite" [required]="false"></mat-checkbox>
+            <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true"><label>
+                Accept terms and conditions</label></div>
+          </div>
         </div>
       </form>
     </div>
